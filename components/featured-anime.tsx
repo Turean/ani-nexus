@@ -16,7 +16,6 @@ export default function FeaturedAnime() {
                     {featured.map((anime) => (
                         <Link key={anime.id} href={`/anime/${anime.id}`}>
                             <Card className="overflow-hidden hover:shadow-lg transition">
-                                {/* Poster */}
                                 <div className="relative aspect-2/3">
                                     <Image
                                         src={anime.image}
