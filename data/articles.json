@@ -1,0 +1,66 @@
+[
+    {
+        "id": "naruto-best-fights",
+        "animeId": "naruto",
+        "title": "Top 10 Naruto Fights That Defined the Series",
+        "published": "2024-01-15",
+        "image": "/images/posts/naruto-fights.jpg",
+        "content": "Naruto is known for its intense and emotional battles. From Naruto vs Sasuke to Rock Lee vs Gaara, these fights shaped the story and its characters."
+    },
+    {
+        "id": "naruto-character-growth",
+        "animeId": "naruto",
+        "title": "How Naruto Uzumaki Grew From Outcast to Hero",
+        "published": "2024-02-10",
+        "image": "/images/posts/naruto-growth.jpg",
+        "content": "Naruto's journey from a lonely child to the Hokage of the Hidden Leaf Village is one of the most inspiring character arcs in anime history."
+    },
+    {
+        "id": "aot-ending-explained",
+        "animeId": "attack-on-titan",
+        "title": "Attack on Titan Ending Explained",
+        "published": "2024-03-01",
+        "image": "/images/posts/aot-ending.jpg",
+        "content": "The ending of Attack on Titan sparked debates across the anime community. This article breaks down the final events and their deeper meaning."
+    },
+    {
+        "id": "aot-strongest-characters",
+        "animeId": "attack-on-titan",
+        "title": "The Strongest Characters in Attack on Titan Ranked",
+        "published": "2024-03-18",
+        "image": "/images/posts/aot-strongest.jpg",
+        "content": "From Levi Ackerman to Eren Yeager, Attack on Titan features many powerful fighters. Here is a ranking based on strength, skills, and impact."
+    },
+    {
+        "id": "jjk-domain-expansion-guide",
+        "animeId": "jujutsu-kaisen",
+        "title": "A Beginner’s Guide to Domain Expansion in Jujutsu Kaisen",
+        "published": "2024-04-05",
+        "image": "/images/posts/jjk-domain.jpg",
+        "content": "Domain Expansion is one of the most powerful techniques in Jujutsu Kaisen. This article explains how it works and why it is so feared."
+    },
+    {
+        "id": "one-piece-best-arcs",
+        "animeId": "one-piece",
+        "title": "The Best Story Arcs in One Piece",
+        "published": "2024-04-22",
+        "image": "/images/posts/one-piece-arcs.jpg",
+        "content": "With over a thousand episodes, One Piece has delivered many unforgettable arcs. This article highlights the most impactful and well-written ones."
+    },
+    {
+        "id": "demon-slayer-animation",
+        "animeId": "demon-slayer",
+        "title": "Why Demon Slayer’s Animation Stands Out",
+        "published": "2024-05-08",
+        "image": "/images/posts/demon-slayer-animation.jpg",
+        "content": "Demon Slayer is widely praised for its stunning animation. This article explores how the studio combined traditional and digital techniques."
+    },
+    {
+        "id": "demon-slayer-hashira-ranking",
+        "animeId": "demon-slayer",
+        "title": "Ranking the Hashira by Strength",
+        "published": "2024-05-25",
+        "image": "/images/posts/hashira-ranking.jpg",
+        "content": "The Hashira are the strongest demon slayers in the corps. This ranking looks at their combat abilities, techniques, and achievements."
+    }
+]

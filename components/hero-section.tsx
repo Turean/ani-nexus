@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
     return (
-        <section className="w-full py-15">
+        <section className="w-full py-15 bg-linear-to-b from-background to-muted">
             <div className="container mx-auto text-center">
                 {/* Title */}
                 <h1 className="text-5xl font-semibold tracking-tight text-balance sm:text-7xl">
