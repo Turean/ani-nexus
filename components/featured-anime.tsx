@@ -14,35 +14,44 @@ export default function FeaturedAnime() {
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {featured.map((anime) => (
-                        <Link key={anime.id} href={`/anime/${anime.id}`}>
-                            <Card className="overflow-hidden hover:shadow-lg transition">
-                                <div className="relative aspect-2/3">
+                        <Link
+                            key={anime.id}
+                            href={`/anime/${anime.id}`}
+                            className="group">
+                            <Card className="rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                <div className="relative aspect-2/3 overflow-hidden">
                                     <Image
                                         src={anime.image}
                                         alt={anime.title}
                                         fill
-                                        className="object-cover"
+                                        className="object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
+
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
+
+                                    <div className="absolute bottom-0 p-4 text-white">
+                                        <h3 className="text-lg font-semibold line-clamp-2">
+                                            {anime.title}
+                                        </h3>
+                                    </div>
                                 </div>
 
-                                <CardHeader>
-                                    <CardTitle className="text-xl font-semibold">
-                                        {anime.title}
-                                    </CardTitle>
-                                </CardHeader>
-
-                                <CardContent>
-                                    <div className="flex flex-wrap gap-2 mb-3">
+                                <CardContent className="space-y-3 p-4">
+                                    <div className="flex flex-wrap gap-2">
                                         {anime.genres.map((genre) => (
                                             <Badge
                                                 key={genre}
-                                                className="bg-gray-500 p-2">
+                                                variant="secondary">
                                                 {genre}
                                             </Badge>
                                         ))}
                                     </div>
 
-                                    <p className="text-lg line-clamp-3">
+                                    <p className="text-sm text-muted-foreground">
+                                        {anime.episodes} Episodes
+                                    </p>
+
+                                    <p className="text-sm text-muted-foreground line-clamp-3">
                                         {anime.description}
                                     </p>
                                 </CardContent>
