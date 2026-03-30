@@ -1,7 +1,7 @@
 import animeList from "@/data/anime.json"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function FeaturedAnime() {
@@ -30,28 +30,28 @@ export default function FeaturedAnime() {
                                     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
 
                                     <div className="absolute bottom-0 p-4 text-white">
-                                        <h3 className="text-lg font-semibold line-clamp-2">
+                                        <h3 className="text-xl font-bold line-clamp-2">
                                             {anime.title}
                                         </h3>
                                     </div>
                                 </div>
 
-                                <CardContent className="space-y-3 p-4">
+                                <CardContent className="space-y-4 p-4">
                                     <div className="flex flex-wrap gap-2">
                                         {anime.genres.map((genre) => (
                                             <Badge
                                                 key={genre}
-                                                variant="secondary">
+                                                className="text-sm text-foreground bg-gray-300">
                                                 {genre}
                                             </Badge>
                                         ))}
                                     </div>
 
-                                    <p className="text-sm text-muted-foreground">
-                                        {anime.episodes} Episodes
+                                    <p className="text-base font-medium text-foreground/90">
+                                        Episode - {anime.episodes}
                                     </p>
 
-                                    <p className="text-sm text-muted-foreground line-clamp-3">
+                                    <p className="text-lg text-foreground line-clamp-3">
                                         {anime.description}
                                     </p>
                                 </CardContent>
