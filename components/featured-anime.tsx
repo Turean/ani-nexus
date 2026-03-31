@@ -8,7 +8,7 @@ export default function FeaturedAnime() {
     const featured = animeList.slice(0, 4)
 
     return (
-        <section className="py-16">
+        <section className="py-12 bg-linear-to-b from-background to-muted">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8">Featured Anime</h2>
 
@@ -24,6 +24,7 @@ export default function FeaturedAnime() {
                                         src={anime.image}
                                         alt={anime.title}
                                         fill
+                                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                                         className="object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
 
