@@ -8,9 +8,11 @@ export default function AnimeBrowsePage() {
         <main className="py-10">
             <div className="container mx-auto px-4">
                 <div className="mb-8">
-                    <h1 className="text-3xl font-bold">Anime</h1>
-                    <p className="text-muted-foreground mt-2">
-                        Browse all anime in the database
+                    <h1 className="text-4xl font-bold">
+                        Discover your new favourite anime
+                    </h1>
+                    <p className="text-lg mt-3">
+                        Find your favourites and explore new seasonal anime
                     </p>
                 </div>
 

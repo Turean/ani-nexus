@@ -23,11 +23,11 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                     />
                 </div>
                 <div className="mt-4 space-y-2">
-                    <h3 className="text-sm font-semibold leading-tight line-clamp-2 group-hover:text-primary">
+                    <h3 className="text-base font-semibold leading-tight line-clamp-2 group-hover:text-yellow-600">
                         {anime.title}
                     </h3>
 
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                         {anime.status} • {anime.episodes} eps
                     </p>
                 </div>
