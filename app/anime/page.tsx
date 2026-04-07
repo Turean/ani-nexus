@@ -1,6 +1,6 @@
 import animeList from "@/data/anime.json"
 import AnimeCard from "@/components/anime-card"
-
+import Link from "next/link"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 
@@ -35,11 +35,10 @@ export default function AnimeBrowsePage() {
 
                     {/* Browse by Season Tab (placeholder) */}
                     <TabsContent value="season">
-                        <div className="space-y-12">
-                            {/* Winter 2025 */}
+                        <div className="space-y-14">
                             <section>
-                                <div className="mb-4">
-                                    <h2 className="text-2xl font-semibold">
+                                <div className="mb-6 text-center">
+                                    <h2 className="text-3xl font-semibold">
                                         Winter 2025
                                     </h2>
                                 </div>
@@ -53,24 +52,25 @@ export default function AnimeBrowsePage() {
                                     ))}
                                 </div>
 
-                                <div>
-                                    <Button>See All Anime</Button>
+                                <div className="flex justify-center">
+                                    <Button
+                                        className="text-lg py-5 px-6 bg-neutral-700 hover:bg-neutral-600!"
+                                        asChild>
+                                        <Link href="/articles">
+                                            See All Anime
+                                        </Link>
+                                    </Button>
                                 </div>
                             </section>
 
-                            {/* Fall 2025 */}
                             <section>
-                                <div className="flex items-center justify-between mb-4">
-                                    <h2 className="text-xl font-semibold">
+                                <div className="mb-6 text-center">
+                                    <h2 className="text-3xl font-semibold">
                                         Fall 2025
                                     </h2>
-
-                                    <span className="text-sm text-primary hover:underline cursor-pointer">
-                                        See all →
-                                    </span>
                                 </div>
 
-                                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mb-6">
                                     {animeList.slice(0, 6).map((anime) => (
                                         <AnimeCard
                                             key={anime.id}
@@ -78,27 +78,15 @@ export default function AnimeBrowsePage() {
                                         />
                                     ))}
                                 </div>
-                            </section>
 
-                            {/* Spring 2025 */}
-                            <section>
-                                <div className="flex items-center justify-between mb-4">
-                                    <h2 className="text-xl font-semibold">
-                                        Spring 2025
-                                    </h2>
-
-                                    <span className="text-sm text-primary hover:underline cursor-pointer">
-                                        See all →
-                                    </span>
-                                </div>
-
-                                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-                                    {animeList.slice(0, 6).map((anime) => (
-                                        <AnimeCard
-                                            key={anime.id}
-                                            anime={anime}
-                                        />
-                                    ))}
+                                <div className="flex justify-center">
+                                    <Button
+                                        className="text-lg p-5 bg-neutral-700 hover:bg-neutral-600!"
+                                        asChild>
+                                        <Link href="/articles">
+                                            See All Anime
+                                        </Link>
+                                    </Button>
                                 </div>
                             </section>
                         </div>
