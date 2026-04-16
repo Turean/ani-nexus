@@ -7,7 +7,12 @@
         "image": "/images/anime/naruto.jpg",
         "episodes": 220,
         "aired": "2002-2007",
-        "status": "Finished"
+        "status": "Finished",
+        "type": "TV",
+        "duration": "23 min/ep",
+        "source": "Manga",
+        "season": "Fall 2002",
+        "studio": "Pierrot"
     },
     {
         "id": "attack-on-titan",
@@ -17,7 +22,12 @@
         "image": "/images/anime/aot.jpg",
         "episodes": 89,
         "aired": "2013-2023",
-        "status": "Finished"
+        "status": "Finished",
+        "type": "TV",
+        "duration": "24 min/ep",
+        "source": "Manga",
+        "season": "Spring 2013",
+        "studio": "MAPPA"
     },
     {
         "id": "jujutsu-kaisen",
@@ -27,7 +37,12 @@
         "image": "/images/anime/jjk.jpg",
         "episodes": 47,
         "aired": "2020-present",
-        "status": "Ongoing"
+        "status": "Ongoing",
+        "type": "TV",
+        "duration": "23 min/ep",
+        "source": "Manga",
+        "season": "Fall 2020",
+        "studio": "MAPPA"
     },
     {
         "id": "one-piece",
@@ -37,7 +52,12 @@
         "image": "/images/anime/one-piece.jpg",
         "episodes": 1000,
         "aired": "1999-present",
-        "status": "Ongoing"
+        "status": "Ongoing",
+        "type": "TV",
+        "duration": "24 min/ep",
+        "source": "Manga",
+        "season": "Fall 1999",
+        "studio": "Toei Animation"
     },
     {
         "id": "demon-slayer",
@@ -47,6 +67,11 @@
         "image": "/images/anime/demon-slayer.jpg",
         "episodes": 55,
         "aired": "2019-present",
-        "status": "Ongoing"
+        "status": "Ongoing",
+        "type": "TV",
+        "duration": "23 min/ep",
+        "source": "Manga",
+        "season": "Spring 2019",
+        "studio": "ufotable"
     }
 ]
