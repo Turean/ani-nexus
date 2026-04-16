@@ -54,7 +54,7 @@ export default function AnimeBrowsePage() {
 
                                 <div className="flex justify-center">
                                     <Button
-                                        className="text-lg py-5 px-6 bg-neutral-700 hover:bg-neutral-600!"
+                                        className="text-base py-5 px-4 bg-neutral-700 hover:bg-neutral-600!"
                                         asChild>
                                         <Link href="/articles">
                                             See All Anime
@@ -81,7 +81,7 @@ export default function AnimeBrowsePage() {
 
                                 <div className="flex justify-center">
                                     <Button
-                                        className="text-lg p-5 bg-neutral-700 hover:bg-neutral-600!"
+                                        className="text-base py-5 px-4 bg-neutral-700 hover:bg-neutral-600!"
                                         asChild>
                                         <Link href="/articles">
                                             See All Anime
