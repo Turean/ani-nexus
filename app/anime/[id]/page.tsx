@@ -6,6 +6,7 @@ import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Anime } from "@/types/global"
+import { cn } from "@/lib/utils"
 
 export default async function AnimeDetailPage({
     params,
@@ -22,32 +23,88 @@ export default async function AnimeDetailPage({
 
     return (
         <main className="container mx-auto px-4 py-10">
-            {/* Top Section: Poster + Info */}
-            <div className="flex flex-col sm:flex-row gap-8 mb-10">
-                {/* Poster */}
-                <div className="relative aspect-2/3 w-full sm:w-56 shrink-0 rounded-xl overflow-hidden">
-                    <Image
-                        src={anime.image}
-                        alt={anime.title}
-                        fill
-                        className="object-cover"
-                        priority
-                    />
+            {/* Top Section */}
+            <div className="flex flex-col sm:flex-row gap-8 mb-12">
+                {/* Left Column: Poster + Stats */}
+                <div className="w-full sm:w-64 shrink-0 flex flex-col gap-4">
+                    {/* Poster */}
+                    <div className="relative aspect-2/3 overflow-hidden">
+                        <Image
+                            src={anime.image}
+                            alt={anime.title}
+                            fill
+                            sizes="(min-width: 640px) 256px, 100vw"
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+
+                    {/* Stats */}
+                    <div className="flex flex-col gap-3 bg-neutral-100 p-5 rounded-2xl">
+                        <div className="border-b border-b-black">
+                            <h2 className="text-xl text-center font-bold mb-2">
+                                Stats
+                            </h2>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Type</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.type}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Episodes</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.episodes}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Aired</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.aired}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Season</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.season}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Duration</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.duration}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Source</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.source}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-base font-medium">Studio</p>
+                            <p className="text-sm text-muted-foreground">
+                                {anime.studio}
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                {/* Info */}
-                <div className="flex flex-col gap-4">
+                {/* Right Column: Title + Badges + Synopsis */}
+                <div className="flex flex-col gap-6 w-full">
                     <div>
                         <h1 className="text-4xl font-bold mb-3">
                             {anime.title}
                         </h1>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-3">
                             <Badge
-                                className={`text-sm ${
+                                className={cn(
+                                    "text-sm text-white",
                                     anime.status === "Ongoing"
-                                        ? "bg-green-600 text-white"
-                                        : "bg-neutral-600 text-white"
-                                }`}>
+                                        ? "bg-green-500"
+                                        : "bg-neutral-500",
+                                )}>
                                 {anime.status}
                             </Badge>
                             {anime.genres.map((genre) => (
@@ -60,60 +117,14 @@ export default async function AnimeDetailPage({
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-x-10 gap-y-3">
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Type
-                            </p>
-                            <p className="font-medium">{anime.type}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Episodes
-                            </p>
-                            <p className="font-medium">{anime.episodes}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Aired
-                            </p>
-                            <p className="font-medium">{anime.aired}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Season
-                            </p>
-                            <p className="font-medium">{anime.season}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Duration
-                            </p>
-                            <p className="font-medium">{anime.duration}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Source
-                            </p>
-                            <p className="font-medium">{anime.source}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">
-                                Studio
-                            </p>
-                            <p className="font-medium">{anime.studio}</p>
-                        </div>
+                    <div>
+                        <h2 className="text-2xl font-bold mb-3">Synopsis</h2>
+                        <p className="text-lg text-foreground/80 leading-relaxed">
+                            {anime.description}
+                        </p>
                     </div>
                 </div>
             </div>
-
-            {/* Synopsis */}
-            <section className="mb-10">
-                <h2 className="text-2xl font-bold mb-4">Synopsis</h2>
-                <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl">
-                    {anime.description}
-                </p>
-            </section>
 
             {/* Related Articles */}
             {relatedArticles.length > 0 && (
