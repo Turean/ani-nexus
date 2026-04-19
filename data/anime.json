@@ -12,7 +12,39 @@
         "duration": "23 min/ep",
         "source": "Manga",
         "season": "Fall 2002",
-        "studio": "Pierrot"
+        "studio": "Pierrot",
+        "characters": [
+            {
+                "name": "Naruto Uzumaki",
+                "role": "Main",
+                "image": "/images/characters/naruto-uzumaki.jpg"
+            },
+            {
+                "name": "Sasuke Uchiha",
+                "role": "Main",
+                "image": "/images/characters/sasuke-uchiha.jpg"
+            },
+            {
+                "name": "Sakura Haruno",
+                "role": "Supporting",
+                "image": "/images/characters/sakura-haruno.jpg"
+            },
+            {
+                "name": "Kakashi Hatake",
+                "role": "Supporting",
+                "image": "/images/characters/kakashi-hatake.jpg"
+            },
+            {
+                "name": "Rock Lee",
+                "role": "Supporting",
+                "image": "/images/characters/rock-lee.jpg"
+            },
+            {
+                "name": "Gaara",
+                "role": "Supporting",
+                "image": "/images/characters/gaara.jpg"
+            }
+        ]
     },
     {
         "id": "attack-on-titan",
@@ -27,7 +59,39 @@
         "duration": "24 min/ep",
         "source": "Manga",
         "season": "Spring 2013",
-        "studio": "MAPPA"
+        "studio": "MAPPA",
+        "characters": [
+            {
+                "name": "Eren Yeager",
+                "role": "Main",
+                "image": "/images/characters/eren-yeager.jpg"
+            },
+            {
+                "name": "Mikasa Ackerman",
+                "role": "Main",
+                "image": "/images/characters/mikasa-ackerman.jpg"
+            },
+            {
+                "name": "Armin Arlert",
+                "role": "Main",
+                "image": "/images/characters/armin-arlert.jpg"
+            },
+            {
+                "name": "Levi Ackerman",
+                "role": "Supporting",
+                "image": "/images/characters/levi-ackerman.jpg"
+            },
+            {
+                "name": "Hange Zoe",
+                "role": "Supporting",
+                "image": "/images/characters/hange-zoe.jpg"
+            },
+            {
+                "name": "Reiner Braun",
+                "role": "Supporting",
+                "image": "/images/characters/reiner-braun.jpg"
+            }
+        ]
     },
     {
         "id": "jujutsu-kaisen",
@@ -42,7 +106,39 @@
         "duration": "23 min/ep",
         "source": "Manga",
         "season": "Fall 2020",
-        "studio": "MAPPA"
+        "studio": "MAPPA",
+        "characters": [
+            {
+                "name": "Yuji Itadori",
+                "role": "Main",
+                "image": "/images/characters/yuji-itadori.jpg"
+            },
+            {
+                "name": "Megumi Fushiguro",
+                "role": "Main",
+                "image": "/images/characters/megumi-fushiguro.jpg"
+            },
+            {
+                "name": "Nobara Kugisaki",
+                "role": "Main",
+                "image": "/images/characters/nobara-kugisaki.jpg"
+            },
+            {
+                "name": "Satoru Gojo",
+                "role": "Supporting",
+                "image": "/images/characters/satoru-gojo.jpg"
+            },
+            {
+                "name": "Ryomen Sukuna",
+                "role": "Supporting",
+                "image": "/images/characters/ryomen-sukuna.jpg"
+            },
+            {
+                "name": "Suguru Geto",
+                "role": "Supporting",
+                "image": "/images/characters/suguru-geto.jpg"
+            }
+        ]
     },
     {
         "id": "one-piece",
@@ -57,7 +153,39 @@
         "duration": "24 min/ep",
         "source": "Manga",
         "season": "Fall 1999",
-        "studio": "Toei Animation"
+        "studio": "Toei Animation",
+        "characters": [
+            {
+                "name": "Monkey D. Luffy",
+                "role": "Main",
+                "image": "/images/characters/monkey-luffy.jpg"
+            },
+            {
+                "name": "Roronoa Zoro",
+                "role": "Main",
+                "image": "/images/characters/roronoa-zoro.jpg"
+            },
+            {
+                "name": "Nami",
+                "role": "Main",
+                "image": "/images/characters/nami.jpg"
+            },
+            {
+                "name": "Sanji",
+                "role": "Supporting",
+                "image": "/images/characters/sanji.jpg"
+            },
+            {
+                "name": "Usopp",
+                "role": "Supporting",
+                "image": "/images/characters/usopp.jpg"
+            },
+            {
+                "name": "Nico Robin",
+                "role": "Supporting",
+                "image": "/images/characters/nico-robin.jpg"
+            }
+        ]
     },
     {
         "id": "demon-slayer",
@@ -72,6 +200,38 @@
         "duration": "23 min/ep",
         "source": "Manga",
         "season": "Spring 2019",
-        "studio": "ufotable"
+        "studio": "ufotable",
+        "characters": [
+            {
+                "name": "Tanjiro Kamado",
+                "role": "Main",
+                "image": "/images/characters/tanjiro-kamado.jpg"
+            },
+            {
+                "name": "Nezuko Kamado",
+                "role": "Main",
+                "image": "/images/characters/nezuko-kamado.jpg"
+            },
+            {
+                "name": "Zenitsu Agatsuma",
+                "role": "Main",
+                "image": "/images/characters/zenitsu-agatsuma.jpg"
+            },
+            {
+                "name": "Inosuke Hashibira",
+                "role": "Supporting",
+                "image": "/images/characters/inosuke-hashibira.jpg"
+            },
+            {
+                "name": "Giyu Tomioka",
+                "role": "Supporting",
+                "image": "/images/characters/giyu-tomioka.jpg"
+            },
+            {
+                "name": "Muzan Kibutsuji",
+                "role": "Supporting",
+                "image": "/images/characters/muzan-kibutsuji.jpg"
+            }
+        ]
     }
 ]

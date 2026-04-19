@@ -12,4 +12,5 @@ export type Anime = {
     source: string
     season: string
     studio: string
+    characters: { name: string; role: string; image: string }[]
 }

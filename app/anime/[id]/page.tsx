@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Anime } from "@/types/global"
 import { cn } from "@/lib/utils"
+import CharacterImage from "@/components/character-image"
 
 export default async function AnimeDetailPage({
     params,
@@ -20,6 +21,7 @@ export default async function AnimeDetailPage({
     if (!anime) notFound()
 
     const relatedArticles = articles.filter((a) => a.animeId === anime.id)
+    const characters = anime.characters.slice(0, 6)
 
     return (
         <main className="container mx-auto px-4 py-10">
@@ -91,8 +93,9 @@ export default async function AnimeDetailPage({
                     </div>
                 </div>
 
-                {/* Right Column: Title + Badges + Synopsis */}
+                {/* Right Column: Title + Badges + Synopsis + Characters */}
                 <div className="flex flex-col gap-6 w-full">
+                    {/* Title + Badges */}
                     <div>
                         <h1 className="text-4xl font-bold mb-3">
                             {anime.title}
@@ -117,12 +120,38 @@ export default async function AnimeDetailPage({
                         </div>
                     </div>
 
+                    {/* Synopsis */}
                     <div>
                         <h2 className="text-2xl font-bold mb-3">Synopsis</h2>
                         <p className="text-lg text-foreground/80 leading-relaxed">
                             {anime.description}
                         </p>
                     </div>
+
+                    {/* Characters */}
+                    {characters.length > 0 && (
+                        <div>
+                            <h2 className="text-2xl font-bold mb-4">
+                                Characters
+                            </h2>
+                            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                                {characters.map((character) => (
+                                    <div key={character.name}>
+                                        <CharacterImage
+                                            src={character.image}
+                                            alt={character.name}
+                                        />
+                                        <p className="text-sm font-semibold line-clamp-2">
+                                            {character.name}
+                                        </p>
+                                        <p className="text-xs text-muted-foreground">
+                                            {character.role}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 
